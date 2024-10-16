@@ -1,0 +1,205 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family: Satoshi, sans-serif;
+}
+img.img-circle {
+  display: block;
+  overflow: hidden;
+  border: 9px solid rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+.img-circle {
+  border-radius : 50%;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #333333 !important;
+}
+.navbar-brand{
+  font-size: 28px;
+  font-weight: 700;
+}
+.stick {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .85;
+}
+.navbar-sticky {
+  width: 100%;
+  background: white;
+  z-index: 99;
+}
+.navbar-nav {
+  gap: 60px;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media (min-width: 992px) {
+  .nav-padding {
+    padding: 30px 300px;
+  }
+
+  #hero{
+    padding: 30px 315px;
+
+  }
+}
+#hero .row{
+  align-items: center;
+  height: 650px;
+}
+.p1{
+  letter-spacing: 0.2rem;
+  color: #656d72;
+  position: relative;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.p2{
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.p3{
+  color:#656d72;
+}
+#skill{
+  background-color: #fbfbfb;
+}
+.section-title {
+  letter-spacing: 0.1rem;
+  color: #232e35;
+  position: relative;
+  padding-left: 40px;
+  font-weight: 600;
+  font-size: 48px;
+}
+.section-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #656d72;
+  position: relative;
+  padding-left: 40px;
+  font-weight: 500;
+  font-size: 14px;
+}
+#skill .content{
+  align-items: center;
+  height: 650px;
+  display: grid;
+}
+#skill .row{
+  margin-right: 0;
+  margin-left: 0;
+}
+#skill .card-title{
+  font-weight: 700;
+  font-size: 24px;
+  color: #656d72;
+}
+#skill .card{
+  border-radius: 15px;
+  padding: 30px 15px;
+  height: 100%;
+}
+#skill .card p{
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 28px;
+  font-size: 18px;
+}
+.level{
+  font-size: 12px;
+  color: #656d72;
+  font-weight: 700;
+}
+#project .content{
+  align-items: center;
+  height: 650px;
+  display: grid;
+}
+#project .image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+#project .image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+#project .image-container:hover img {
+  opacity: 0.7;
+}
+#project .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+#project .image-container:hover .overlay {
+  opacity: 1;
+}
+#project .text {
+  color: white;
+  font-size: 25px;
+  font-weight:700;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  transition: 0.5s ease;
+}
+#project .image-container:hover .text {
+  bottom: 40%;
+}
+.modal.custom-fade .modal-dialog {
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  transform: translateY(50px); /* Modal starts 50px down */
+  opacity: 0;
+}
+.modal.custom-fade.show .modal-dialog {
+  transform: translateY(0); /* Modal moves to its original position */
+  opacity: 1; /* Fully visible */
+}
+#project .modal {
+  z-index: 9999;
+}
+#contact .content{
+  align-items: center;
+  height: 650px;
+  display: grid;
+}
+#contact .card{
+  max-width: 450px;
+}
+#contact a{
+  text-decoration: none;
+  color: #333333 !important;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa; /* Warna background untuk footer */
+}
+.footer p {
+  margin: 0;
+  color: #6c757d; /* Warna teks */
+}
